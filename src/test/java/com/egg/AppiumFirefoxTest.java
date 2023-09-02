@@ -20,8 +20,8 @@ public class AppiumFirefoxTest {
 
         // Configuración para Android
         capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
-        capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "b6e068160409"); // Cambiar a nombre de tu dispositivo
-        capabilities.setCapability(MobileCapabilityType.BROWSER_NAME, "Chrome");
+        capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "emulator-5554"); // Cambiar a nombre de tu dispositivo
+        capabilities.setCapability(MobileCapabilityType.BROWSER_NAME, "Browser");
         capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UiAutomator2");
 
         // // Inicializa la conexión con el dispositivo a través de USB
@@ -37,7 +37,7 @@ public class AppiumFirefoxTest {
         AppiumDriver<MobileElement> driver = new AndroidDriver<>(appiumServerURL, capabilities);
 
         // Abre una URL en el navegador Firefox
-        driver.get("https://www.google.com");
+        driver.get("https://www.wikipedia.org");
 
         // Realiza alguna interacción adicional, como hacer clic en enlaces o buscar información
         // ...
