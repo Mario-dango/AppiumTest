@@ -11,7 +11,7 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-public class AppiumFirefoxTest {
+public class AppiumBrowserTest {
 
     @Test
     public void asdasd() {
@@ -21,7 +21,7 @@ public class AppiumFirefoxTest {
         // Configuración para Android
         capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
         capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "emulator-5554"); // Cambiar a nombre de tu dispositivo
-        capabilities.setCapability(MobileCapabilityType.BROWSER_NAME, "Browser");
+        capabilities.setCapability(MobileCapabilityType.BROWSER_NAME, "Chrome");
         capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UiAutomator2");
 
         // // Inicializa la conexión con el dispositivo a través de USB
